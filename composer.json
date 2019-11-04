@@ -12,7 +12,12 @@
         }
     ],
     "keywords": [
-        "utils"
+        "utils",
+        "php",
+        "gettext",
+        "i18n",
+        "cli",
+        "msgfmt"
     ],
     "license": "Apache 2.0",
     "require": {
