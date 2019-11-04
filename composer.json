@@ -1,10 +1,14 @@
 {
-    "name": "spalax/msgfmt",
+    "name": "dexen/msgfmt",
     "description": "Utilities",
     "authors": [
         {
             "name": "Mylotskyi Oleksii",
             "email": "spalaxinco@gmail.com"
+        },
+        {
+            "name": "dexen deVries",
+            "email": "dexen.devries@gmail.com"
         }
     ],
     "keywords": [
