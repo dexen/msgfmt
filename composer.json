@@ -20,7 +20,7 @@
         "cli",
         "msgfmt"
     ],
-    "license": "Apache 2.0",
+    "license": "Apache-2.0",
     "require": {
         "php": ">=5.3"
     },
