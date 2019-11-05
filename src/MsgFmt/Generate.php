@@ -26,6 +26,7 @@ class Generate
         }
 
         $hash = $this->parsePoFile($poFile);
+        $hash = $this->filterOutEmptyTranslations($hash);
         if ( $hash === false ) {
             return false;
         } else {
@@ -33,6 +34,18 @@ class Generate
             return true;
         }
     }
+
+	function filterOutEmptyTranslations($hash)
+	{
+		return array_filter(
+			$hash,
+			function($record) {
+				$anyEmptyMsgstr = false;
+				foreach ($record['msgstr'] as $msgstr)
+					if ($msgstr === '')
+						$anyEmptyMsgstr = true;
+				return !$anyEmptyMsgstr; } );
+	}
 
     /**
      * @param string $poFile
