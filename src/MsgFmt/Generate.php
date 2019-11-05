@@ -87,6 +87,7 @@ class Generate
             }
 
             switch ($key) {
+                case '#~': // obsolete records
                 case '#,' : // flag...
                     $fuzzy= in_array('fuzzy', preg_split('/,\s*/', $data));
                 case '#' : // translator-comments
