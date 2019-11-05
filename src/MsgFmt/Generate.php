@@ -177,8 +177,8 @@ class Generate
             if ($x[0] == '"')
                 $x= substr($x, 1, -1);
             $x= str_replace("\"\n\"", '', $x);
-            $x= str_replace('$', '\\$', $x);
-            $x= @ eval ("return \"$x\";");
+            $x = str_replace('\\n', "\n", $x);
+            $x = str_replace('\\"', '"', $x);
         }
         return $x;
     }
