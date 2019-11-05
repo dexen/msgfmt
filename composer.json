@@ -1,5 +1,6 @@
 {
     "name": "dexen/msgfmt",
+    "version": "0.0.2",
     "description": "Utilities",
     "authors": [
         {
